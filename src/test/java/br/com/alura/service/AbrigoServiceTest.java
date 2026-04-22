@@ -58,7 +58,7 @@ public class AbrigoServiceTest {
 
         String[] lines = baos.toString().split(System.lineSeparator());
         String actual = lines[0];
-        
+
         Assertions.assertEquals(expected, actual);
     }
 }
