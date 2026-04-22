@@ -3,6 +3,7 @@ package br.com.alura.service;
 import br.com.alura.client.ClientHttpConfiguration;
 import br.com.alura.domain.Abrigo;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 import java.net.http.HttpResponse;
 import java.util.Arrays;
@@ -15,7 +16,6 @@ public class AbrigoService {
 
     public AbrigoService(ClientHttpConfiguration client) {
         this.client = client;
-
     }
 
     public void listarAbrigo() throws IOException, InterruptedException {

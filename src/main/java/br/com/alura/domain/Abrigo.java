@@ -16,7 +16,7 @@ public class Abrigo {
     private String nome;
     private String telefone;
     private String email;
-    private Pet[] pets;
+/*    private Pet[] pets;*/
 
     public Long getId() {
         return id;
@@ -34,9 +34,9 @@ public class Abrigo {
         return email;
     }
 
-    public Pet[] getPets() {
+/*    public Pet[] getPets() {
         return pets;
-    }
+    }*/
 
     public void setId(Long id) {
         this.id = id;
@@ -45,7 +45,7 @@ public class Abrigo {
     @Override
     public String toString() {
         return """
-                     "id":%s,"nome":"%s","telefone":"%s","email":"%s"
-                     """.formatted(this.id, this.nome, this.telefone, this.email);
+               "id":%s,"nome":"%s","telefone":"%s","email":"%s"
+               """.formatted(this.id, this.nome, this.telefone, this.email);
     }
 }

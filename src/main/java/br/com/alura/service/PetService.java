@@ -71,7 +71,7 @@ public class PetService {
             String cor = campos[4];
             Float peso = Float.parseFloat(campos[5]);
 
-            Pet pet =  new Pet(tipo, nome, raca, idade, cor, peso);
+            Pet pet = new Pet(tipo, nome, raca, idade, cor, peso);
 
             String uri = "http://localhost:8080/abrigos/" + idOuNome + "/pets";
             HttpResponse<String> response = client.dispararRequisicaoPost(uri, pet);
